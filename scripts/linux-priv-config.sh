@@ -19,9 +19,7 @@ apt-get update
 apt-get install -y \
 	build-essential \
 	git \
-	libc6-dev-i386 \
 	libpcre3-dev \
-	linux-libc-dev:i386 \
 	pkg-config \
 	zip \
 	curl \
@@ -29,6 +27,10 @@ apt-get install -y \
 	tree \
 	unzip \
 	wget
+
+# Install i386 build utilities for Linux
+apt-get install -y \
+	libc6-dev-i386-cross \
 
 # Install ARM build utilities
 apt-get install -y \

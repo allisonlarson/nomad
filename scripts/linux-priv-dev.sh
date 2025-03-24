@@ -15,7 +15,7 @@ apt-get install -y \
 curl -sSL -o- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
 echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
 apt-get update
-apt-get install -y google-chrome-stable
+apt-get install -y chromium-browser
 
 # Set hostname -> IP to make advertisement work as expected
 ip=$(ip route get 1 | awk '{print $NF; exit}')
